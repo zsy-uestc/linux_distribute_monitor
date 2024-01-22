@@ -1,0 +1,26 @@
+syntax = "proto3";
+package monitor.proto;
+
+import "google/protobuf/empty.proto";
+import "net_info.proto";
+import "mem_info.proto";
+import "cpu_stat.proto";
+import "cpu_softirqs.proto";
+import "cpu_load.proto";
+
+message MonitorInfo{
+  string name = 1;
+  repeated SoftIrqs soft_irq = 2;
+  CpuLoad cpu_load = 3;
+  repeated CpuStat cpu_stat = 4;
+  MemInfo mem_info = 5;
+  repeated NetInfo net_info = 6;
+}
+
+service GrpcManager {
+  rpc SetMonitorInfo(MonitorInfo) returns (google.protobuf.Empty) {
+  }
+
+  rpc GetMonitorInfo(google.protobuf.Empty) returns (MonitorInfo) {
+  }
+}
