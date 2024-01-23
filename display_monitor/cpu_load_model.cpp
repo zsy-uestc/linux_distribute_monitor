@@ -7,7 +7,10 @@ CpuLoadModel::CpuLoadModel(QObject* parent) : MonitorInterModel(parent) {
   header_ << tr("load_1");
   header_ << tr("load_5");
   header_ << tr("load_15");
+<<<<<<< HEAD
   header_ << tr("cpu cores");
+=======
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
 }
 
 int CpuLoadModel::rowCount(const QModelIndex& parent) const {
@@ -57,7 +60,10 @@ void CpuLoadModel::UpdateMonitorInfo(const monitor::proto::MonitorInfo& monitor_
 
 std::vector<QVariant> CpuLoadModel::insert_one_cpu_load(
     const monitor::proto::CpuLoad& cpu_load) {
+<<<<<<< HEAD
   const monitor::proto::MonitorInfo* req;
+=======
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
   std::vector<QVariant> cpu_load_list;
   for (int i = CpuLoad::CPU_AVG_1; i < COLUMN_MAX; i++) {
     switch (i) {
@@ -70,9 +76,12 @@ std::vector<QVariant> CpuLoadModel::insert_one_cpu_load(
       case CpuLoad::CPU_AVG_15:
         cpu_load_list.push_back(QVariant(cpu_load.load_avg_15()));
         break;
+<<<<<<< HEAD
       case CpuLoad::CPU_CORES:
         cpu_load_list.push_back(QVariant(req->soft_irq_size()));
         break;
+=======
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
       default:
         break;
     }

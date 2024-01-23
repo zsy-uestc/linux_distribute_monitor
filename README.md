@@ -69,7 +69,11 @@ cd /home/zsy/code/linux_distribute_monitor
 ./docker_build.sh
 ```
 
+<<<<<<< HEAD
 ### 2.启动与进入容器，并编译
+=======
+### 2.启动并进入容器，并编译
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
 
 > - 运行脚本docker_run.sh，进入docker容器
 > - docker run
@@ -82,7 +86,11 @@ cd /home/zsy/code/linux_distribute_monitor/docker/scripts
 ./docker_run.sh
 ```
 
+<<<<<<< HEAD
 ```sh
+=======
+```
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
 ./docker_into.sh
 ```
 
@@ -136,7 +144,11 @@ cd /linux_distribute_monitor/cmake/test_monitor/
 ./monitor
 ```
 
+<<<<<<< HEAD
 ### 6. 进入容器，启动display终端显示(新建终端)
+=======
+### 6. 进入容器，启动display终端显示 (新建终端)
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
 
 ```sh
 cd /home/zsy/code/linux_distribute_monitor/docker/scripts
@@ -170,6 +182,7 @@ cd /home/zsy/code/linux_distribute_monitor/docker/scripts
 
 
 
+<<<<<<< HEAD
 ## 压测工具的使用
 
 - CPU测试（开启2个CPU进程执行sqrt计算）
@@ -194,6 +207,8 @@ stress --cpu 4 --timeout 60
 
 
 
+=======
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
 ## 序列化模块
 
 ### 序列化和反序列化的组件-底层原理
@@ -232,6 +247,7 @@ stress --cpu 4 --timeout 60
   > 第四个数字：正在运行的进程数 / 总进程数。
   > 第五个数字：最近运行的一个进程PID号。
 
+<<<<<<< HEAD
 - 系统进程整体的统计信息
 
   ```sh
@@ -272,6 +288,8 @@ stress --cpu 4 --timeout 60
   >     
   >     当 irq/softirq 占用率过高的时候，很可能某些外设出现问题，导致产生大量的irq请求，这时候通过检查 /proc/interrupts 文件来深究问题所在；
 
+=======
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
 
 
 - 查看开机以来软中断累计次数

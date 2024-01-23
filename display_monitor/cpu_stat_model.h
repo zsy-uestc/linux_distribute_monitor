@@ -41,10 +41,13 @@ class CpuStatModel : public MonitorInterModel {
     CPU_PERCENT,
     CPU_USER_PERCENT,
     CPU_SYSTEM_PERCENT,
+<<<<<<< HEAD
     CPU_IDLE_PERCENT,   // 后面四个新增
     CPU_IOWAIT_PERCENT,
     CPU_IRQ_PERCENT,
     CPU_SOFTIRQ_PERCENT,
+=======
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
     COLUMN_MAX
   };
 };

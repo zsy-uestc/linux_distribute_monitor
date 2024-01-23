@@ -6,10 +6,13 @@ CpuStatModel::CpuStatModel(QObject* parent) : MonitorInterModel(parent) {
   header_ << tr("cpu_percent");
   header_ << tr("user");
   header_ << tr("system");
+<<<<<<< HEAD
   header_ << tr("idle");
   header_ << tr("io_wait");
   header_ << tr("irq");
   header_ << tr("soft_irq");
+=======
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
 }
 
 int CpuStatModel::rowCount(const QModelIndex& parent) const {
@@ -36,7 +39,11 @@ QVariant CpuStatModel::data(const QModelIndex& index, int role) const {
 
   if (role == Qt::DisplayRole) {
     if (index.row() < monitor_data_.size() && index.column() < COLUMN_MAX)
+<<<<<<< HEAD
       return monitor_data_[index.row()][index.column()].toString();
+=======
+      return monitor_data_[index.row()][index.column()];
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
   }
   return QVariant();
 }
@@ -61,15 +68,20 @@ void CpuStatModel::UpdateMonitorInfo(
 
 std::vector<QVariant> CpuStatModel::insert_one_cpu_stat(
     const monitor::proto::CpuStat& cpu_stat) {
+<<<<<<< HEAD
      
   std::vector<QVariant> cpu_stat_list;
   QString per = "%";
+=======
+  std::vector<QVariant> cpu_stat_list;
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
   for (int i = CpuStat::CPU_NAME; i < COLUMN_MAX; i++) {
     switch (i) {
       case CpuStat::CPU_NAME:
         cpu_stat_list.push_back(QString::fromStdString(cpu_stat.cpu_name()));
         break;
       case CpuStat::CPU_PERCENT:
+<<<<<<< HEAD
         cpu_stat_list.push_back(QString::number(QVariant(cpu_stat.cpu_percent()).toDouble(), 'f', 2).append(per));
         break;
       case CpuStat::CPU_USER_PERCENT:
@@ -90,6 +102,15 @@ std::vector<QVariant> CpuStatModel::insert_one_cpu_stat(
         break;
       case CpuStat::CPU_SOFTIRQ_PERCENT:
         cpu_stat_list.push_back(QString::number(QVariant(cpu_stat.soft_irq_percent()).toDouble(), 'f', 2).append(per));
+=======
+        cpu_stat_list.push_back(QVariant(cpu_stat.cpu_percent()));
+        break;
+      case CpuStat::CPU_USER_PERCENT:
+        cpu_stat_list.push_back(QVariant(cpu_stat.usr_percent()));
+        break;
+      case CpuStat::CPU_SYSTEM_PERCENT:
+        cpu_stat_list.push_back(QVariant(cpu_stat.system_percent()));
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
         break;
       default:
         break;

@@ -40,7 +40,10 @@ class CpuLoadModel : public MonitorInterModel {
     CPU_AVG_1 = 0,
     CPU_AVG_3,
     CPU_AVG_15,
+<<<<<<< HEAD
     CPU_CORES,
+=======
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
     COLUMN_MAX
   };
 };
