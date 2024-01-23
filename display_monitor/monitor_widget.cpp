@@ -21,10 +21,17 @@ QWidget* MonitorWidget::ShowAllMonitorWidget(const std::string& name) {
 }
 
 QWidget* MonitorWidget::InitButtonMenu(const std::string& name) {
+<<<<<<< HEAD
+    QPushButton* cpu_button = new QPushButton(QString::fromStdString(name) + "_cpu", this);
+    QPushButton* soft_irq_button = new QPushButton(QString::fromStdString(name) + "_soft_irq", this);
+    QPushButton* mem_button = new QPushButton(QString::fromStdString(name) + "_mem", this);
+    QPushButton* net_button = new QPushButton(QString::fromStdString(name) + "_net", this);
+=======
     QPushButton* cpu_button = new QPushButton(QString::fromStdString(name) + "cpu", this);
     QPushButton* soft_irq_button = new QPushButton(QString::fromStdString(name) + "soft_irq", this);
     QPushButton* mem_button = new QPushButton(QString::fromStdString(name) + "mem", this);
     QPushButton* net_button = new QPushButton(QString::fromStdString(name) + "net", this);
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
 
     QFont font("Microsoft YaHei", 15, 40);
     cpu_button->setFont(font);

@@ -69,7 +69,11 @@ cd /home/zsy/code/linux_distribute_monitor
 ./docker_build.sh
 ```
 
+<<<<<<< HEAD
+### 2.启动与进入容器，并编译
+=======
 ### 2.启动并进入容器，并编译
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
 
 > - 运行脚本docker_run.sh，进入docker容器
 > - docker run
@@ -82,7 +86,11 @@ cd /home/zsy/code/linux_distribute_monitor/docker/scripts
 ./docker_run.sh
 ```
 
+<<<<<<< HEAD
+```sh
+=======
 ```
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
 ./docker_into.sh
 ```
 
@@ -136,7 +144,11 @@ cd /linux_distribute_monitor/cmake/test_monitor/
 ./monitor
 ```
 
+<<<<<<< HEAD
+### 6. 进入容器，启动display终端显示(新建终端)
+=======
 ### 6. 进入容器，启动display终端显示 (新建终端)
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
 
 ```sh
 cd /home/zsy/code/linux_distribute_monitor/docker/scripts
@@ -170,6 +182,33 @@ cd /home/zsy/code/linux_distribute_monitor/docker/scripts
 
 
 
+<<<<<<< HEAD
+## 压测工具的使用
+
+- CPU测试（开启2个CPU进程执行sqrt计算）
+
+```sh
+stress --cpu 4 --timeout 60
+```
+
+> 通过cpustat看到cpu_percent列数值趋近于100%，与user（用户态）使用率接近97%。
+>
+> 同时cpuload中数值也逐渐上升，负载增加
+
+
+
+- IO测试（开启2个IO进程，执行sync系统调用，刷新内存缓冲区到磁盘）
+
+  ```sh
+  stress --io 4 --timeout 60
+  ```
+
+> cpu_percent、system、io_wait列数值逐渐上升，user数值降低
+
+
+
+=======
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
 ## 序列化模块
 
 ### 序列化和反序列化的组件-底层原理
@@ -208,6 +247,49 @@ cd /home/zsy/code/linux_distribute_monitor/docker/scripts
   > 第四个数字：正在运行的进程数 / 总进程数。
   > 第五个数字：最近运行的一个进程PID号。
 
+<<<<<<< HEAD
+- 系统进程整体的统计信息
+
+  ```sh
+  cat /proc/stat
+  ```
+
+  ![](/home/zsy/图片/2024-01-23 14-08-45 的屏幕截图.png)
+
+  > #### 参数的含义：
+  >
+  > cpu: 表示所有CPU核心的总体统计信息。
+  > cpu0, cpu1, …: 表示各个CPU核心的具体统计信息。
+  >
+  > 列1：用户态时间（user）。CPU 在低 nice 值(高优先级)用户态所占用的时间(nice<=0），典型的用户态空间程序有：Shells、数据库、web服务器……
+  > 列2：用户态低优先级时间（nice）。CPU 在高 nice 值(低优先级)用户态以低优先级运行占用的时间(nice>0)，优先级的范围为[-20,19]
+  > 列3：内核态时间（system）。例如：分配内存、IO操作、创建子进程……通常情况下该值会比较小，当服务器执行的 IO 比较密集的时候，该值会比较大
+  > 列4：空闲时间（idle）。CPU 在空闲状态(执行 kernel idle handler )所占用的时间
+  > 列5：I/O等待I时间（iowait）。等待 IO 完成所占用的时间
+  > 列6：硬件中断时间（irq）。等待 IO 完成所占用的时间
+  > 列7：软件中断时间（softirq）。系统处理软中断所消耗的时间
+  > 列8：虚拟机管理程序时间（steal）
+  > 列9：虚拟机管理程序等待时间（guest）
+  > 列10：虚拟机管理程序等待低优先级时间（guest_nice）
+
+  
+
+  > #### 排查步骤
+  >
+  > CPU 占用率高很多情况下意味着一些东西，这也给服务器 CPU 使用率过高情况下指明了相应地排查思路：
+  >
+  >     当 user 占用率过高的时候，通常是某些个别的进程占用了大量的 CPU，这时候很容易通过 top 找到该程序；此时如果怀疑程序异常，可以通过 perf 等思路找出热点调用函数来进一步排查；
+  >     
+  >     当 system 占用率过高的时候，如果 IO 操作(包括终端 IO)比较多，可能会造成这部分的 CPU 占用率高，比如在 file server、database server 等类型的服务器上，否则(比如>20%)很可能有些部分的内核、驱动模块有问题；
+  >     
+  >     当 nice 占用率过高的时候，通常是有意行为，当进程的发起者知道某些进程占用较高的 CPU，会设置其 nice 值确保不会淹没其他进程对 CPU 的使用请求；
+  >     
+  >     当 iowait 占用率过高的时候，通常意味着某些程序的 IO 操作效率很低，或者 IO 对应设备的性能很低以至于读写操作需要很长的时间来完成；
+  >     
+  >     当 irq/softirq 占用率过高的时候，很可能某些外设出现问题，导致产生大量的irq请求，这时候通过检查 /proc/interrupts 文件来深究问题所在；
+
+=======
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
 
 
 - 查看开机以来软中断累计次数

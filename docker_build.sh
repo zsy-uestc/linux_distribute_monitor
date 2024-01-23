@@ -12,6 +12,17 @@ else
     docker --version
 fi
 
+<<<<<<< HEAD
+# docker加入用户组-o
+sudo groupadd docker
+sudo usermod -aG docker ${USER}
+sudo systemctl restart docker
+newgrp docker
+docker ps
+echo "docker加入用户组成功"
+
+=======
+>>>>>>> 72ec158588310452e6cec479692c184e37016bf8
 # 构建镜像
 echo "docker building..."
 cd docker/build/
