@@ -66,10 +66,10 @@ cd /home/zsy/code/linux_distribute_monitor
 ```
 
 ```sh
-sudo ./docker_build.sh
+./docker_build.sh
 ```
 
-### 2.启动并进入容器
+### 2.启动并进入容器，并编译
 
 > - 运行脚本docker_run.sh，进入docker容器
 > - docker run
@@ -82,7 +82,23 @@ cd /home/zsy/code/linux_distribute_monitor/docker/scripts
 ./docker_run.sh
 ```
 
-### 3.进入容器，启动server服务
+```
+./docker_into.sh
+```
+
+```sh
+cd /home/zsy/code/linux_distribute_monitor/cmake
+```
+
+```sh
+cmake ..
+```
+
+```sh
+make
+```
+
+### 3.进入容器，启动server服务 (新建终端)
 
 > - docker exec
 
@@ -120,7 +136,7 @@ cd /linux_distribute_monitor/cmake/test_monitor/
 ./monitor
 ```
 
-### 6. 进入容器，启动display终端显示(新建终端)
+### 6. 进入容器，启动display终端显示 (新建终端)
 
 ```sh
 cd /home/zsy/code/linux_distribute_monitor/docker/scripts
