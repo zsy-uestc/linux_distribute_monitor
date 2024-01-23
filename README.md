@@ -69,7 +69,7 @@ cd /home/zsy/code/linux_distribute_monitor
 ./docker_build.sh
 ```
 
-### 2.启动并进入容器，并编译
+### 2.启动与进入容器，并编译
 
 > - 运行脚本docker_run.sh，进入docker容器
 > - docker run
@@ -136,7 +136,7 @@ cd /linux_distribute_monitor/cmake/test_monitor/
 ./monitor
 ```
 
-### 6. 进入容器，启动display终端显示 (新建终端)
+### 6. 进入容器，启动display终端显示(新建终端)
 
 ```sh
 cd /home/zsy/code/linux_distribute_monitor/docker/scripts
@@ -168,6 +168,8 @@ cd /home/zsy/code/linux_distribute_monitor/docker/scripts
 ./docker_stop.sh
 ```
 
+
+
 ## 压测工具的使用
 
 - CPU测试（开启2个CPU进程执行sqrt计算）
@@ -189,6 +191,7 @@ stress --cpu 4 --timeout 60
   ```
 
 > cpu_percent、system、io_wait列数值逐渐上升，user数值降低
+
 
 
 ## 序列化模块
@@ -268,6 +271,7 @@ stress --cpu 4 --timeout 60
   >     当 iowait 占用率过高的时候，通常意味着某些程序的 IO 操作效率很低，或者 IO 对应设备的性能很低以至于读写操作需要很长的时间来完成；
   >     
   >     当 irq/softirq 占用率过高的时候，很可能某些外设出现问题，导致产生大量的irq请求，这时候通过检查 /proc/interrupts 文件来深究问题所在；
+
 
 
 - 查看开机以来软中断累计次数
