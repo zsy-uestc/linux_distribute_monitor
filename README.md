@@ -66,7 +66,7 @@ cd /home/zsy/code/linux_distribute_monitor
 ```
 
 ```sh
-./docker_build.sh
+sudo ./docker_build.sh
 ```
 
 ### 2.启动并进入容器
