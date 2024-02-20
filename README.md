@@ -87,7 +87,7 @@ cd /home/zsy/code/linux_distribute_monitor/docker/scripts
 ```
 
 ```sh
-cd /home/zsy/code/linux_distribute_monitor/cmake
+cd linux_distribute_monitor/cmake
 ```
 
 ```sh
