@@ -6,13 +6,10 @@ CpuStatModel::CpuStatModel(QObject* parent) : MonitorInterModel(parent) {
   header_ << tr("cpu_percent");
   header_ << tr("user");
   header_ << tr("system");
-<<<<<<< HEAD
   header_ << tr("idle");
   header_ << tr("io_wait");
   header_ << tr("irq");
   header_ << tr("soft_irq");
-=======
->>>>>>> 72ec158588310452e6cec479692c184e37016bf8
 }
 
 int CpuStatModel::rowCount(const QModelIndex& parent) const {
@@ -39,11 +36,7 @@ QVariant CpuStatModel::data(const QModelIndex& index, int role) const {
 
   if (role == Qt::DisplayRole) {
     if (index.row() < monitor_data_.size() && index.column() < COLUMN_MAX)
-<<<<<<< HEAD
       return monitor_data_[index.row()][index.column()].toString();
-=======
-      return monitor_data_[index.row()][index.column()];
->>>>>>> 72ec158588310452e6cec479692c184e37016bf8
   }
   return QVariant();
 }
