@@ -71,7 +71,7 @@ std::vector<QVariant> CpuLoadModel::insert_one_cpu_load(
         cpu_load_list.push_back(QVariant(cpu_load.load_avg_15()));
         break;
       case CpuLoad::CPU_CORES:
-        cpu_load_list.push_back(QVariant(req->.soft_irq_size()));
+        cpu_load_list.push_back(QVariant(req->soft_irq_size()));
         break;
       default:
         break;
