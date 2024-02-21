@@ -60,22 +60,25 @@ void NetModel::UpdateMonitorInfo(
 std::vector<QVariant> NetModel::insert_one_net_info(
     const monitor::proto::NetInfo& net_info) {
   std::vector<QVariant> net_info_list;
+  QString kbits = "KB/s";
+  QString pps = "pps";  //包/秒（packets per second），符号为 pps
+
   for (int i = NetModelInfo::NAME; i < COLUMN_MAX; i++) {
     switch (i) {
       case NetModelInfo::NAME:
         net_info_list.push_back(QString::fromStdString(net_info.name()));
         break;
       case NetModelInfo::SEND_RATE:
-        net_info_list.push_back(QVariant(net_info.send_rate()));
+        net_info_list.push_back(QString::number(QVariant(net_info.send_rate()).toDouble(), 'f', 2).append(kbits));
         break;
       case NetModelInfo::RCV_RATE:
-        net_info_list.push_back(QVariant(net_info.rcv_rate()));
+        net_info_list.push_back(QString::number(QVariant(net_info.rcv_rate()).toDouble(), 'f', 2).append(kbits));
         break;
       case NetModelInfo::SEND_PACKETS_RATE:
-        net_info_list.push_back(QVariant(net_info.send_packets_rate()));
+        net_info_list.push_back(QString::number(QVariant(net_info.send_packets_rate()).toDouble(), 'f', 2).append(pps));
         break;
       case NetModelInfo::RCV_PACKETS_RATE:
-        net_info_list.push_back(QVariant(net_info.rcv_packets_rate()));
+        net_info_list.push_back(QString::number(QVariant(net_info.rcv_packets_rate()).toDouble(), 'f', 2).append(pps));
         break;
       default:
         break;

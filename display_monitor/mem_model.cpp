@@ -2,26 +2,26 @@
 
 namespace monitor {
 MemModel::MemModel(QObject* parent) : MonitorInterModel(parent) {
-  header_ << tr("used_percent");
-  header_ << tr("total");
-  header_ << tr("free");
-  header_ << tr("avail");
-  header_ << tr("buffers");
-  header_ << tr("cached");
-  header_ << tr("swap_cached");
+  header_ << tr("UsedPercent");
+  header_ << tr("MemTotal");
+  header_ << tr("MemFree");
+  header_ << tr("MemAvailable");
+  header_ << tr("Buffers");
+  header_ << tr("Cached");
+  header_ << tr("SwapCached");
   header_ << tr("active");
-  header_ << tr("in_active");
-  header_ << tr("active_anon");
-  header_ << tr("inactive_anon");
-  header_ << tr("active_file");
-  header_ << tr("inactive_file");
-  header_ << tr("dirty");
-  header_ << tr("writeback");
-  header_ << tr("anon_pages");
-  header_ << tr("mapped");
-  header_ << tr("kReclaimable");
-  header_ << tr("sReclaimable");
-  header_ << tr("sUnreclaim");
+  header_ << tr("Inactive");
+  header_ << tr("Active(anon)");
+  header_ << tr("Inactive(anon)");
+  header_ << tr("Active(file)");
+  header_ << tr("Inactive(file)");
+  header_ << tr("Dirty");
+  header_ << tr("Writeback");
+  header_ << tr("AnonPages");
+  header_ << tr("Mapped");
+  header_ << tr("KReclaimable");
+  header_ << tr("SReclaimable");
+  header_ << tr("SUnreclaim");
 }
 
 int MemModel::rowCount(const QModelIndex& parent) const {
@@ -71,61 +71,63 @@ void MemModel::UpdateMonitorInfo(
 std::vector<QVariant> MemModel::insert_one_mem_info(
     const monitor::proto::MemInfo& mem_info) {
   std::vector<QVariant> mem_info_list;
+  QString per = "%";
+  QString GB = "GB";
   for (int i = MemInfo::USED_PERCENT; i < COLUMN_MAX; i++) {
     switch (i) {
       case MemInfo::USED_PERCENT:
-        mem_info_list.push_back(QVariant(mem_info.used_percent()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.used_percent()).toDouble(), 'f', 2).append(per));
         break;
       case MemInfo::TOTAL:
-        mem_info_list.push_back(QVariant(mem_info.total()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.total()).toDouble(), 'f', 2).append(GB));
         break;
       case MemInfo::FREE:
-        mem_info_list.push_back(QVariant(mem_info.free()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.free()).toDouble(), 'f', 2).append(GB));
         break;
       case MemInfo::AVAIL:
-        mem_info_list.push_back(QVariant(mem_info.avail()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.avail()).toDouble(), 'f', 2).append(GB));
         break;
       case MemInfo::BUFFERS:
-        mem_info_list.push_back(QVariant(mem_info.buffers()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.buffers()).toDouble(), 'f', 2).append(GB));
         break;
       case MemInfo::CACHED:
-        mem_info_list.push_back(QVariant(mem_info.cached()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.cached()).toDouble(), 'f', 2).append(GB));
         break;
       case MemInfo::SWAP_CACHED:
-        mem_info_list.push_back(QVariant(mem_info.swap_cached()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.swap_cached()).toDouble(), 'f', 2).append(GB));
         break;
       case MemInfo::ACTIVE:
-        mem_info_list.push_back(QVariant(mem_info.active()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.active()).toDouble(), 'f', 2).append(GB));
         break;
       case MemInfo::INACTIVE:
-        mem_info_list.push_back(QVariant(mem_info.inactive()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.inactive()).toDouble(), 'f', 2).append(GB));
         break;
       case MemInfo::ACTIVE_ANON:
-        mem_info_list.push_back(QVariant(mem_info.active_anon()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.active_anon()).toDouble(), 'f', 2).append(GB));
         break;
       case MemInfo::INACTIVE_ANON:
-        mem_info_list.push_back(QVariant(mem_info.inactive_anon()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.inactive_anon()).toDouble(), 'f', 2).append(GB));
         break;
       case MemInfo::DIRTY:
-        mem_info_list.push_back(QVariant(mem_info.dirty()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.dirty()).toDouble(), 'f', 2).append(GB));
         break;
       case MemInfo::WRITEBACK:
-        mem_info_list.push_back(QVariant(mem_info.writeback()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.writeback()).toDouble(), 'f', 2).append(GB));
         break;
       case MemInfo::ANON_PAGES:
-        mem_info_list.push_back(QVariant(mem_info.anon_pages()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.anon_pages()).toDouble(), 'f', 2).append(GB));
         break;
       case MemInfo::MAPPED:
-        mem_info_list.push_back(QVariant(mem_info.mapped()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.mapped()).toDouble(), 'f', 2).append(GB));
         break;
       case MemInfo::KRECLAIMABLE:
-        mem_info_list.push_back(QVariant(mem_info.kreclaimable()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.kreclaimable()).toDouble(), 'f', 2).append(GB));
         break;
       case MemInfo::SRECLAIMABLE:
-        mem_info_list.push_back(QVariant(mem_info.sreclaimable()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.sreclaimable()).toDouble(), 'f', 2).append(GB));
         break;
       case MemInfo::SUNRECLAIM:
-        mem_info_list.push_back(QVariant(mem_info.sunreclaim()));
+        mem_info_list.push_back(QString::number(QVariant(mem_info.sunreclaim()).toDouble(), 'f', 2).append(GB));
         break;
       default:
         break;
