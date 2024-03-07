@@ -117,9 +117,17 @@ proto/net_info.pb.h: /usr/local/bin/protoc-3.14.0.0
 proto/net_info.pb.cc: proto/net_info.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/net_info.pb.cc
 
+proto/parsing_log.pb.h: /linux_distribute_monitor/proto/parsing_log.proto
+proto/parsing_log.pb.h: /usr/local/bin/protoc-3.14.0.0
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Running cpp protocol buffer compiler on parsing_log.proto"
+	cd /linux_distribute_monitor/cmake/proto && /usr/local/bin/protoc-3.14.0.0 --cpp_out /linux_distribute_monitor/cmake/proto -I /linux_distribute_monitor/proto /linux_distribute_monitor/proto/parsing_log.proto
+
+proto/parsing_log.pb.cc: proto/parsing_log.pb.h
+	@$(CMAKE_COMMAND) -E touch_nocreate proto/parsing_log.pb.cc
+
 proto/cpu_load.grpc.pb.h: /linux_distribute_monitor/proto/cpu_load.proto
 proto/cpu_load.grpc.pb.h: /usr/local/bin/protoc-3.14.0.0
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Running grpc protocol buffer compiler on cpu_load.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Running grpc protocol buffer compiler on cpu_load.proto"
 	cd /linux_distribute_monitor/cmake/proto && /usr/local/bin/protoc-3.14.0.0 --grpc_out /linux_distribute_monitor/cmake/proto --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin -I /linux_distribute_monitor/proto /linux_distribute_monitor/proto/cpu_load.proto
 
 proto/cpu_load.grpc.pb.cc: proto/cpu_load.grpc.pb.h
@@ -127,7 +135,7 @@ proto/cpu_load.grpc.pb.cc: proto/cpu_load.grpc.pb.h
 
 proto/cpu_softirqs.grpc.pb.h: /linux_distribute_monitor/proto/cpu_softirqs.proto
 proto/cpu_softirqs.grpc.pb.h: /usr/local/bin/protoc-3.14.0.0
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Running grpc protocol buffer compiler on cpu_softirqs.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Running grpc protocol buffer compiler on cpu_softirqs.proto"
 	cd /linux_distribute_monitor/cmake/proto && /usr/local/bin/protoc-3.14.0.0 --grpc_out /linux_distribute_monitor/cmake/proto --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin -I /linux_distribute_monitor/proto /linux_distribute_monitor/proto/cpu_softirqs.proto
 
 proto/cpu_softirqs.grpc.pb.cc: proto/cpu_softirqs.grpc.pb.h
@@ -135,7 +143,7 @@ proto/cpu_softirqs.grpc.pb.cc: proto/cpu_softirqs.grpc.pb.h
 
 proto/cpu_stat.grpc.pb.h: /linux_distribute_monitor/proto/cpu_stat.proto
 proto/cpu_stat.grpc.pb.h: /usr/local/bin/protoc-3.14.0.0
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Running grpc protocol buffer compiler on cpu_stat.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Running grpc protocol buffer compiler on cpu_stat.proto"
 	cd /linux_distribute_monitor/cmake/proto && /usr/local/bin/protoc-3.14.0.0 --grpc_out /linux_distribute_monitor/cmake/proto --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin -I /linux_distribute_monitor/proto /linux_distribute_monitor/proto/cpu_stat.proto
 
 proto/cpu_stat.grpc.pb.cc: proto/cpu_stat.grpc.pb.h
@@ -143,7 +151,7 @@ proto/cpu_stat.grpc.pb.cc: proto/cpu_stat.grpc.pb.h
 
 proto/mem_info.grpc.pb.h: /linux_distribute_monitor/proto/mem_info.proto
 proto/mem_info.grpc.pb.h: /usr/local/bin/protoc-3.14.0.0
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Running grpc protocol buffer compiler on mem_info.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Running grpc protocol buffer compiler on mem_info.proto"
 	cd /linux_distribute_monitor/cmake/proto && /usr/local/bin/protoc-3.14.0.0 --grpc_out /linux_distribute_monitor/cmake/proto --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin -I /linux_distribute_monitor/proto /linux_distribute_monitor/proto/mem_info.proto
 
 proto/mem_info.grpc.pb.cc: proto/mem_info.grpc.pb.h
@@ -151,7 +159,7 @@ proto/mem_info.grpc.pb.cc: proto/mem_info.grpc.pb.h
 
 proto/monitor_info.grpc.pb.h: /linux_distribute_monitor/proto/monitor_info.proto
 proto/monitor_info.grpc.pb.h: /usr/local/bin/protoc-3.14.0.0
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Running grpc protocol buffer compiler on monitor_info.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Running grpc protocol buffer compiler on monitor_info.proto"
 	cd /linux_distribute_monitor/cmake/proto && /usr/local/bin/protoc-3.14.0.0 --grpc_out /linux_distribute_monitor/cmake/proto --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin -I /linux_distribute_monitor/proto /linux_distribute_monitor/proto/monitor_info.proto
 
 proto/monitor_info.grpc.pb.cc: proto/monitor_info.grpc.pb.h
@@ -159,16 +167,24 @@ proto/monitor_info.grpc.pb.cc: proto/monitor_info.grpc.pb.h
 
 proto/net_info.grpc.pb.h: /linux_distribute_monitor/proto/net_info.proto
 proto/net_info.grpc.pb.h: /usr/local/bin/protoc-3.14.0.0
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Running grpc protocol buffer compiler on net_info.proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Running grpc protocol buffer compiler on net_info.proto"
 	cd /linux_distribute_monitor/cmake/proto && /usr/local/bin/protoc-3.14.0.0 --grpc_out /linux_distribute_monitor/cmake/proto --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin -I /linux_distribute_monitor/proto /linux_distribute_monitor/proto/net_info.proto
 
 proto/net_info.grpc.pb.cc: proto/net_info.grpc.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/net_info.grpc.pb.cc
 
+proto/parsing_log.grpc.pb.h: /linux_distribute_monitor/proto/parsing_log.proto
+proto/parsing_log.grpc.pb.h: /usr/local/bin/protoc-3.14.0.0
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Running grpc protocol buffer compiler on parsing_log.proto"
+	cd /linux_distribute_monitor/cmake/proto && /usr/local/bin/protoc-3.14.0.0 --grpc_out /linux_distribute_monitor/cmake/proto --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin -I /linux_distribute_monitor/proto /linux_distribute_monitor/proto/parsing_log.proto
+
+proto/parsing_log.grpc.pb.cc: proto/parsing_log.grpc.pb.h
+	@$(CMAKE_COMMAND) -E touch_nocreate proto/parsing_log.grpc.pb.cc
+
 proto/CMakeFiles/monitor_proto.dir/cpu_load.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/flags.make
 proto/CMakeFiles/monitor_proto.dir/cpu_load.pb.cc.o: proto/cpu_load.pb.cc
 proto/CMakeFiles/monitor_proto.dir/cpu_load.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object proto/CMakeFiles/monitor_proto.dir/cpu_load.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object proto/CMakeFiles/monitor_proto.dir/cpu_load.pb.cc.o"
 	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/monitor_proto.dir/cpu_load.pb.cc.o -MF CMakeFiles/monitor_proto.dir/cpu_load.pb.cc.o.d -o CMakeFiles/monitor_proto.dir/cpu_load.pb.cc.o -c /linux_distribute_monitor/cmake/proto/cpu_load.pb.cc
 
 proto/CMakeFiles/monitor_proto.dir/cpu_load.pb.cc.i: cmake_force
@@ -182,7 +198,7 @@ proto/CMakeFiles/monitor_proto.dir/cpu_load.pb.cc.s: cmake_force
 proto/CMakeFiles/monitor_proto.dir/cpu_softirqs.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/flags.make
 proto/CMakeFiles/monitor_proto.dir/cpu_softirqs.pb.cc.o: proto/cpu_softirqs.pb.cc
 proto/CMakeFiles/monitor_proto.dir/cpu_softirqs.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object proto/CMakeFiles/monitor_proto.dir/cpu_softirqs.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object proto/CMakeFiles/monitor_proto.dir/cpu_softirqs.pb.cc.o"
 	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/monitor_proto.dir/cpu_softirqs.pb.cc.o -MF CMakeFiles/monitor_proto.dir/cpu_softirqs.pb.cc.o.d -o CMakeFiles/monitor_proto.dir/cpu_softirqs.pb.cc.o -c /linux_distribute_monitor/cmake/proto/cpu_softirqs.pb.cc
 
 proto/CMakeFiles/monitor_proto.dir/cpu_softirqs.pb.cc.i: cmake_force
@@ -196,7 +212,7 @@ proto/CMakeFiles/monitor_proto.dir/cpu_softirqs.pb.cc.s: cmake_force
 proto/CMakeFiles/monitor_proto.dir/cpu_stat.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/flags.make
 proto/CMakeFiles/monitor_proto.dir/cpu_stat.pb.cc.o: proto/cpu_stat.pb.cc
 proto/CMakeFiles/monitor_proto.dir/cpu_stat.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object proto/CMakeFiles/monitor_proto.dir/cpu_stat.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object proto/CMakeFiles/monitor_proto.dir/cpu_stat.pb.cc.o"
 	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/monitor_proto.dir/cpu_stat.pb.cc.o -MF CMakeFiles/monitor_proto.dir/cpu_stat.pb.cc.o.d -o CMakeFiles/monitor_proto.dir/cpu_stat.pb.cc.o -c /linux_distribute_monitor/cmake/proto/cpu_stat.pb.cc
 
 proto/CMakeFiles/monitor_proto.dir/cpu_stat.pb.cc.i: cmake_force
@@ -210,7 +226,7 @@ proto/CMakeFiles/monitor_proto.dir/cpu_stat.pb.cc.s: cmake_force
 proto/CMakeFiles/monitor_proto.dir/mem_info.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/flags.make
 proto/CMakeFiles/monitor_proto.dir/mem_info.pb.cc.o: proto/mem_info.pb.cc
 proto/CMakeFiles/monitor_proto.dir/mem_info.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object proto/CMakeFiles/monitor_proto.dir/mem_info.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object proto/CMakeFiles/monitor_proto.dir/mem_info.pb.cc.o"
 	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/monitor_proto.dir/mem_info.pb.cc.o -MF CMakeFiles/monitor_proto.dir/mem_info.pb.cc.o.d -o CMakeFiles/monitor_proto.dir/mem_info.pb.cc.o -c /linux_distribute_monitor/cmake/proto/mem_info.pb.cc
 
 proto/CMakeFiles/monitor_proto.dir/mem_info.pb.cc.i: cmake_force
@@ -224,7 +240,7 @@ proto/CMakeFiles/monitor_proto.dir/mem_info.pb.cc.s: cmake_force
 proto/CMakeFiles/monitor_proto.dir/monitor_info.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/flags.make
 proto/CMakeFiles/monitor_proto.dir/monitor_info.pb.cc.o: proto/monitor_info.pb.cc
 proto/CMakeFiles/monitor_proto.dir/monitor_info.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object proto/CMakeFiles/monitor_proto.dir/monitor_info.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object proto/CMakeFiles/monitor_proto.dir/monitor_info.pb.cc.o"
 	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/monitor_proto.dir/monitor_info.pb.cc.o -MF CMakeFiles/monitor_proto.dir/monitor_info.pb.cc.o.d -o CMakeFiles/monitor_proto.dir/monitor_info.pb.cc.o -c /linux_distribute_monitor/cmake/proto/monitor_info.pb.cc
 
 proto/CMakeFiles/monitor_proto.dir/monitor_info.pb.cc.i: cmake_force
@@ -238,7 +254,7 @@ proto/CMakeFiles/monitor_proto.dir/monitor_info.pb.cc.s: cmake_force
 proto/CMakeFiles/monitor_proto.dir/net_info.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/flags.make
 proto/CMakeFiles/monitor_proto.dir/net_info.pb.cc.o: proto/net_info.pb.cc
 proto/CMakeFiles/monitor_proto.dir/net_info.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object proto/CMakeFiles/monitor_proto.dir/net_info.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object proto/CMakeFiles/monitor_proto.dir/net_info.pb.cc.o"
 	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/monitor_proto.dir/net_info.pb.cc.o -MF CMakeFiles/monitor_proto.dir/net_info.pb.cc.o.d -o CMakeFiles/monitor_proto.dir/net_info.pb.cc.o -c /linux_distribute_monitor/cmake/proto/net_info.pb.cc
 
 proto/CMakeFiles/monitor_proto.dir/net_info.pb.cc.i: cmake_force
@@ -249,10 +265,24 @@ proto/CMakeFiles/monitor_proto.dir/net_info.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monitor_proto.dir/net_info.pb.cc.s"
 	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /linux_distribute_monitor/cmake/proto/net_info.pb.cc -o CMakeFiles/monitor_proto.dir/net_info.pb.cc.s
 
+proto/CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/flags.make
+proto/CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.o: proto/parsing_log.pb.cc
+proto/CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object proto/CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.o"
+	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.o -MF CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.o.d -o CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.o -c /linux_distribute_monitor/cmake/proto/parsing_log.pb.cc
+
+proto/CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.i"
+	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /linux_distribute_monitor/cmake/proto/parsing_log.pb.cc > CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.i
+
+proto/CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.s"
+	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /linux_distribute_monitor/cmake/proto/parsing_log.pb.cc -o CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.s
+
 proto/CMakeFiles/monitor_proto.dir/cpu_load.grpc.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/flags.make
 proto/CMakeFiles/monitor_proto.dir/cpu_load.grpc.pb.cc.o: proto/cpu_load.grpc.pb.cc
 proto/CMakeFiles/monitor_proto.dir/cpu_load.grpc.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object proto/CMakeFiles/monitor_proto.dir/cpu_load.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object proto/CMakeFiles/monitor_proto.dir/cpu_load.grpc.pb.cc.o"
 	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/monitor_proto.dir/cpu_load.grpc.pb.cc.o -MF CMakeFiles/monitor_proto.dir/cpu_load.grpc.pb.cc.o.d -o CMakeFiles/monitor_proto.dir/cpu_load.grpc.pb.cc.o -c /linux_distribute_monitor/cmake/proto/cpu_load.grpc.pb.cc
 
 proto/CMakeFiles/monitor_proto.dir/cpu_load.grpc.pb.cc.i: cmake_force
@@ -266,7 +296,7 @@ proto/CMakeFiles/monitor_proto.dir/cpu_load.grpc.pb.cc.s: cmake_force
 proto/CMakeFiles/monitor_proto.dir/cpu_softirqs.grpc.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/flags.make
 proto/CMakeFiles/monitor_proto.dir/cpu_softirqs.grpc.pb.cc.o: proto/cpu_softirqs.grpc.pb.cc
 proto/CMakeFiles/monitor_proto.dir/cpu_softirqs.grpc.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object proto/CMakeFiles/monitor_proto.dir/cpu_softirqs.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object proto/CMakeFiles/monitor_proto.dir/cpu_softirqs.grpc.pb.cc.o"
 	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/monitor_proto.dir/cpu_softirqs.grpc.pb.cc.o -MF CMakeFiles/monitor_proto.dir/cpu_softirqs.grpc.pb.cc.o.d -o CMakeFiles/monitor_proto.dir/cpu_softirqs.grpc.pb.cc.o -c /linux_distribute_monitor/cmake/proto/cpu_softirqs.grpc.pb.cc
 
 proto/CMakeFiles/monitor_proto.dir/cpu_softirqs.grpc.pb.cc.i: cmake_force
@@ -280,7 +310,7 @@ proto/CMakeFiles/monitor_proto.dir/cpu_softirqs.grpc.pb.cc.s: cmake_force
 proto/CMakeFiles/monitor_proto.dir/cpu_stat.grpc.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/flags.make
 proto/CMakeFiles/monitor_proto.dir/cpu_stat.grpc.pb.cc.o: proto/cpu_stat.grpc.pb.cc
 proto/CMakeFiles/monitor_proto.dir/cpu_stat.grpc.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object proto/CMakeFiles/monitor_proto.dir/cpu_stat.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object proto/CMakeFiles/monitor_proto.dir/cpu_stat.grpc.pb.cc.o"
 	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/monitor_proto.dir/cpu_stat.grpc.pb.cc.o -MF CMakeFiles/monitor_proto.dir/cpu_stat.grpc.pb.cc.o.d -o CMakeFiles/monitor_proto.dir/cpu_stat.grpc.pb.cc.o -c /linux_distribute_monitor/cmake/proto/cpu_stat.grpc.pb.cc
 
 proto/CMakeFiles/monitor_proto.dir/cpu_stat.grpc.pb.cc.i: cmake_force
@@ -294,7 +324,7 @@ proto/CMakeFiles/monitor_proto.dir/cpu_stat.grpc.pb.cc.s: cmake_force
 proto/CMakeFiles/monitor_proto.dir/mem_info.grpc.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/flags.make
 proto/CMakeFiles/monitor_proto.dir/mem_info.grpc.pb.cc.o: proto/mem_info.grpc.pb.cc
 proto/CMakeFiles/monitor_proto.dir/mem_info.grpc.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object proto/CMakeFiles/monitor_proto.dir/mem_info.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object proto/CMakeFiles/monitor_proto.dir/mem_info.grpc.pb.cc.o"
 	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/monitor_proto.dir/mem_info.grpc.pb.cc.o -MF CMakeFiles/monitor_proto.dir/mem_info.grpc.pb.cc.o.d -o CMakeFiles/monitor_proto.dir/mem_info.grpc.pb.cc.o -c /linux_distribute_monitor/cmake/proto/mem_info.grpc.pb.cc
 
 proto/CMakeFiles/monitor_proto.dir/mem_info.grpc.pb.cc.i: cmake_force
@@ -308,7 +338,7 @@ proto/CMakeFiles/monitor_proto.dir/mem_info.grpc.pb.cc.s: cmake_force
 proto/CMakeFiles/monitor_proto.dir/monitor_info.grpc.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/flags.make
 proto/CMakeFiles/monitor_proto.dir/monitor_info.grpc.pb.cc.o: proto/monitor_info.grpc.pb.cc
 proto/CMakeFiles/monitor_proto.dir/monitor_info.grpc.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object proto/CMakeFiles/monitor_proto.dir/monitor_info.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object proto/CMakeFiles/monitor_proto.dir/monitor_info.grpc.pb.cc.o"
 	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/monitor_proto.dir/monitor_info.grpc.pb.cc.o -MF CMakeFiles/monitor_proto.dir/monitor_info.grpc.pb.cc.o.d -o CMakeFiles/monitor_proto.dir/monitor_info.grpc.pb.cc.o -c /linux_distribute_monitor/cmake/proto/monitor_info.grpc.pb.cc
 
 proto/CMakeFiles/monitor_proto.dir/monitor_info.grpc.pb.cc.i: cmake_force
@@ -322,7 +352,7 @@ proto/CMakeFiles/monitor_proto.dir/monitor_info.grpc.pb.cc.s: cmake_force
 proto/CMakeFiles/monitor_proto.dir/net_info.grpc.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/flags.make
 proto/CMakeFiles/monitor_proto.dir/net_info.grpc.pb.cc.o: proto/net_info.grpc.pb.cc
 proto/CMakeFiles/monitor_proto.dir/net_info.grpc.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object proto/CMakeFiles/monitor_proto.dir/net_info.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object proto/CMakeFiles/monitor_proto.dir/net_info.grpc.pb.cc.o"
 	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/monitor_proto.dir/net_info.grpc.pb.cc.o -MF CMakeFiles/monitor_proto.dir/net_info.grpc.pb.cc.o.d -o CMakeFiles/monitor_proto.dir/net_info.grpc.pb.cc.o -c /linux_distribute_monitor/cmake/proto/net_info.grpc.pb.cc
 
 proto/CMakeFiles/monitor_proto.dir/net_info.grpc.pb.cc.i: cmake_force
@@ -333,6 +363,20 @@ proto/CMakeFiles/monitor_proto.dir/net_info.grpc.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monitor_proto.dir/net_info.grpc.pb.cc.s"
 	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /linux_distribute_monitor/cmake/proto/net_info.grpc.pb.cc -o CMakeFiles/monitor_proto.dir/net_info.grpc.pb.cc.s
 
+proto/CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/flags.make
+proto/CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.o: proto/parsing_log.grpc.pb.cc
+proto/CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.o: proto/CMakeFiles/monitor_proto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object proto/CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.o"
+	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.o -MF CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.o.d -o CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.o -c /linux_distribute_monitor/cmake/proto/parsing_log.grpc.pb.cc
+
+proto/CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.i"
+	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /linux_distribute_monitor/cmake/proto/parsing_log.grpc.pb.cc > CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.i
+
+proto/CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.s"
+	cd /linux_distribute_monitor/cmake/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /linux_distribute_monitor/cmake/proto/parsing_log.grpc.pb.cc -o CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.s
+
 # Object files for target monitor_proto
 monitor_proto_OBJECTS = \
 "CMakeFiles/monitor_proto.dir/cpu_load.pb.cc.o" \
@@ -341,12 +385,14 @@ monitor_proto_OBJECTS = \
 "CMakeFiles/monitor_proto.dir/mem_info.pb.cc.o" \
 "CMakeFiles/monitor_proto.dir/monitor_info.pb.cc.o" \
 "CMakeFiles/monitor_proto.dir/net_info.pb.cc.o" \
+"CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.o" \
 "CMakeFiles/monitor_proto.dir/cpu_load.grpc.pb.cc.o" \
 "CMakeFiles/monitor_proto.dir/cpu_softirqs.grpc.pb.cc.o" \
 "CMakeFiles/monitor_proto.dir/cpu_stat.grpc.pb.cc.o" \
 "CMakeFiles/monitor_proto.dir/mem_info.grpc.pb.cc.o" \
 "CMakeFiles/monitor_proto.dir/monitor_info.grpc.pb.cc.o" \
-"CMakeFiles/monitor_proto.dir/net_info.grpc.pb.cc.o"
+"CMakeFiles/monitor_proto.dir/net_info.grpc.pb.cc.o" \
+"CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.o"
 
 # External object files for target monitor_proto
 monitor_proto_EXTERNAL_OBJECTS =
@@ -357,15 +403,17 @@ proto/libmonitor_proto.a: proto/CMakeFiles/monitor_proto.dir/cpu_stat.pb.cc.o
 proto/libmonitor_proto.a: proto/CMakeFiles/monitor_proto.dir/mem_info.pb.cc.o
 proto/libmonitor_proto.a: proto/CMakeFiles/monitor_proto.dir/monitor_info.pb.cc.o
 proto/libmonitor_proto.a: proto/CMakeFiles/monitor_proto.dir/net_info.pb.cc.o
+proto/libmonitor_proto.a: proto/CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.o
 proto/libmonitor_proto.a: proto/CMakeFiles/monitor_proto.dir/cpu_load.grpc.pb.cc.o
 proto/libmonitor_proto.a: proto/CMakeFiles/monitor_proto.dir/cpu_softirqs.grpc.pb.cc.o
 proto/libmonitor_proto.a: proto/CMakeFiles/monitor_proto.dir/cpu_stat.grpc.pb.cc.o
 proto/libmonitor_proto.a: proto/CMakeFiles/monitor_proto.dir/mem_info.grpc.pb.cc.o
 proto/libmonitor_proto.a: proto/CMakeFiles/monitor_proto.dir/monitor_info.grpc.pb.cc.o
 proto/libmonitor_proto.a: proto/CMakeFiles/monitor_proto.dir/net_info.grpc.pb.cc.o
+proto/libmonitor_proto.a: proto/CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.o
 proto/libmonitor_proto.a: proto/CMakeFiles/monitor_proto.dir/build.make
 proto/libmonitor_proto.a: proto/CMakeFiles/monitor_proto.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX static library libmonitor_proto.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX static library libmonitor_proto.a"
 	cd /linux_distribute_monitor/cmake/proto && $(CMAKE_COMMAND) -P CMakeFiles/monitor_proto.dir/cmake_clean_target.cmake
 	cd /linux_distribute_monitor/cmake/proto && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/monitor_proto.dir/link.txt --verbose=$(VERBOSE)
 
@@ -401,6 +449,10 @@ proto/CMakeFiles/monitor_proto.dir/depend: proto/net_info.grpc.pb.cc
 proto/CMakeFiles/monitor_proto.dir/depend: proto/net_info.grpc.pb.h
 proto/CMakeFiles/monitor_proto.dir/depend: proto/net_info.pb.cc
 proto/CMakeFiles/monitor_proto.dir/depend: proto/net_info.pb.h
+proto/CMakeFiles/monitor_proto.dir/depend: proto/parsing_log.grpc.pb.cc
+proto/CMakeFiles/monitor_proto.dir/depend: proto/parsing_log.grpc.pb.h
+proto/CMakeFiles/monitor_proto.dir/depend: proto/parsing_log.pb.cc
+proto/CMakeFiles/monitor_proto.dir/depend: proto/parsing_log.pb.h
 	cd /linux_distribute_monitor/cmake && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /linux_distribute_monitor /linux_distribute_monitor/proto /linux_distribute_monitor/cmake /linux_distribute_monitor/cmake/proto /linux_distribute_monitor/cmake/proto/CMakeFiles/monitor_proto.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : proto/CMakeFiles/monitor_proto.dir/depend
 

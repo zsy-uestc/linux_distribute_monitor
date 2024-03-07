@@ -418,6 +418,54 @@ net_info.pb.cc.s:
 	cd /linux_distribute_monitor/cmake && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/monitor_proto.dir/build.make proto/CMakeFiles/monitor_proto.dir/net_info.pb.cc.s
 .PHONY : net_info.pb.cc.s
 
+parsing_log.grpc.pb.o: parsing_log.grpc.pb.cc.o
+.PHONY : parsing_log.grpc.pb.o
+
+# target to build an object file
+parsing_log.grpc.pb.cc.o:
+	cd /linux_distribute_monitor/cmake && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/monitor_proto.dir/build.make proto/CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.o
+.PHONY : parsing_log.grpc.pb.cc.o
+
+parsing_log.grpc.pb.i: parsing_log.grpc.pb.cc.i
+.PHONY : parsing_log.grpc.pb.i
+
+# target to preprocess a source file
+parsing_log.grpc.pb.cc.i:
+	cd /linux_distribute_monitor/cmake && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/monitor_proto.dir/build.make proto/CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.i
+.PHONY : parsing_log.grpc.pb.cc.i
+
+parsing_log.grpc.pb.s: parsing_log.grpc.pb.cc.s
+.PHONY : parsing_log.grpc.pb.s
+
+# target to generate assembly for a file
+parsing_log.grpc.pb.cc.s:
+	cd /linux_distribute_monitor/cmake && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/monitor_proto.dir/build.make proto/CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.s
+.PHONY : parsing_log.grpc.pb.cc.s
+
+parsing_log.pb.o: parsing_log.pb.cc.o
+.PHONY : parsing_log.pb.o
+
+# target to build an object file
+parsing_log.pb.cc.o:
+	cd /linux_distribute_monitor/cmake && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/monitor_proto.dir/build.make proto/CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.o
+.PHONY : parsing_log.pb.cc.o
+
+parsing_log.pb.i: parsing_log.pb.cc.i
+.PHONY : parsing_log.pb.i
+
+# target to preprocess a source file
+parsing_log.pb.cc.i:
+	cd /linux_distribute_monitor/cmake && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/monitor_proto.dir/build.make proto/CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.i
+.PHONY : parsing_log.pb.cc.i
+
+parsing_log.pb.s: parsing_log.pb.cc.s
+.PHONY : parsing_log.pb.s
+
+# target to generate assembly for a file
+parsing_log.pb.cc.s:
+	cd /linux_distribute_monitor/cmake && $(MAKE) $(MAKESILENT) -f proto/CMakeFiles/monitor_proto.dir/build.make proto/CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.s
+.PHONY : parsing_log.pb.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -463,6 +511,12 @@ help:
 	@echo "... net_info.pb.o"
 	@echo "... net_info.pb.i"
 	@echo "... net_info.pb.s"
+	@echo "... parsing_log.grpc.pb.o"
+	@echo "... parsing_log.grpc.pb.i"
+	@echo "... parsing_log.grpc.pb.s"
+	@echo "... parsing_log.pb.o"
+	@echo "... parsing_log.pb.i"
+	@echo "... parsing_log.pb.s"
 .PHONY : help
 
 

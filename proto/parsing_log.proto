@@ -1,0 +1,14 @@
+syntax = "proto3";
+package monitor.proto;
+
+//解析的日志格式（单行）：
+//2024-03-02 08:08:30,133 [ERROR] [ros.yjh_control] [FsmComm::GetChargePoint:659] - get charge points of all map is empty! no charge point.
+
+message ParsingLog{
+    string allLog = 1;      // 日志的完整信息: 2024-03-02 08:08:30,133 [ERROR] [ros.yjh_control] [FsmComm::GetChargePoint:659] - get charge points of all map is empty! no charge point.
+    string dateTime = 2 ;   // 时间戳:2024-03-02 08:08:30,133
+    string type = 3;        // 日志类型:ERROR, WARNING, INFO  
+    string node = 4;        // 节点类型 : [ros.yjh_control]  
+    string fun_info = 5;    // 函数的定位: FsmComm::GetChargePoint:659  
+    string message = 6;     // 反馈的错误信息: get charge points of all map is empty! no charge point. 
+  }

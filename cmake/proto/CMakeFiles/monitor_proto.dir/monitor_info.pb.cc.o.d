@@ -271,5 +271,6 @@ proto/CMakeFiles/monitor_proto.dir/monitor_info.pb.cc.o: \
  /linux_distribute_monitor/cmake/proto/cpu_stat.pb.h \
  /linux_distribute_monitor/cmake/proto/cpu_softirqs.pb.h \
  /linux_distribute_monitor/cmake/proto/cpu_load.pb.h \
+ /linux_distribute_monitor/cmake/proto/parsing_log.pb.h \
  /usr/local/include/google/protobuf/reflection_ops.h \
  /usr/local/include/google/protobuf/wire_format.h

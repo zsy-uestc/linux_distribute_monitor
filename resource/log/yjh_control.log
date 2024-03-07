@@ -1,0 +1,6 @@
+2024-03-02 08:08:30,039 [ERROR] [ros.yjh_control] [FsmComm::GetChargePoint:659] - get charge points of all map is empty! no charge point.
+2024-03-02 08:08:30,043 [WARN ] [ros.yjh_control] [FsmIdle::handleState:169] - start to charge failed
+2024-03-02 08:08:30,097 [INFO ] [ros.yjh_control] [FsmIdle::handleState:166] - The robot go to charging when power percent less then auto charge close value! power_auto_chg_close is [70]
+2024-03-02 08:08:30,133 [ERROR] [ros.yjh_control] [FsmComm::GetChargePoint:659] - get charge points of all map is empty! no charge point.
+2024-03-02 08:08:30,134 [WARN ] [ros.yjh_control] [FsmIdle::handleState:169] - start to charge failed
+FsmIdle::handleState:166] - The robot go to charging when power percent less then auto charge close value! power_auto_chg_close is [70]

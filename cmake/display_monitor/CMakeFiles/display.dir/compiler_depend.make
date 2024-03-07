@@ -394,6 +394,7 @@ display_monitor/CMakeFiles/display.dir/cpu_load_model.cpp.o: /linux_distribute_m
   proto/cpu_stat.pb.h \
   proto/cpu_softirqs.pb.h \
   proto/cpu_load.pb.h \
+  proto/parsing_log.pb.h \
   /usr/local/include/grpc/impl/codegen/port_platform.h \
   /usr/include/linux/version.h \
   /usr/local/include/grpcpp/impl/codegen/async_generic_service.h \
@@ -872,6 +873,7 @@ display_monitor/CMakeFiles/display.dir/cpu_softirq_model.cpp.o: /linux_distribut
   proto/cpu_stat.pb.h \
   proto/cpu_softirqs.pb.h \
   proto/cpu_load.pb.h \
+  proto/parsing_log.pb.h \
   /usr/local/include/grpc/impl/codegen/port_platform.h \
   /usr/include/linux/version.h \
   /usr/local/include/grpcpp/impl/codegen/async_generic_service.h \
@@ -1350,6 +1352,7 @@ display_monitor/CMakeFiles/display.dir/cpu_stat_model.cpp.o: /linux_distribute_m
   proto/cpu_stat.pb.h \
   proto/cpu_softirqs.pb.h \
   proto/cpu_load.pb.h \
+  proto/parsing_log.pb.h \
   /usr/local/include/grpc/impl/codegen/port_platform.h \
   /usr/include/linux/version.h \
   /usr/local/include/grpcpp/impl/codegen/async_generic_service.h \
@@ -1829,6 +1832,7 @@ display_monitor/CMakeFiles/display.dir/display_autogen/mocs_compilation.cpp.o: d
   proto/cpu_stat.pb.h \
   proto/cpu_softirqs.pb.h \
   proto/cpu_load.pb.h \
+  proto/parsing_log.pb.h \
   /usr/local/include/grpc/impl/codegen/port_platform.h \
   /usr/include/linux/version.h \
   /usr/local/include/grpcpp/impl/codegen/async_generic_service.h \
@@ -3078,6 +3082,7 @@ display_monitor/CMakeFiles/display.dir/main.cpp.o: /linux_distribute_monitor/dis
   proto/cpu_stat.pb.h \
   proto/cpu_softirqs.pb.h \
   proto/cpu_load.pb.h \
+  proto/parsing_log.pb.h \
   /usr/local/include/grpcpp/impl/codegen/async_generic_service.h \
   /usr/local/include/grpcpp/impl/codegen/async_stream_impl.h \
   /usr/local/include/grpcpp/impl/codegen/service_type.h \
@@ -4134,6 +4139,7 @@ display_monitor/CMakeFiles/display.dir/mem_model.cpp.o: /linux_distribute_monito
   proto/cpu_stat.pb.h \
   proto/cpu_softirqs.pb.h \
   proto/cpu_load.pb.h \
+  proto/parsing_log.pb.h \
   /usr/local/include/grpc/impl/codegen/port_platform.h \
   /usr/include/linux/version.h \
   /usr/local/include/grpcpp/impl/codegen/async_generic_service.h \
@@ -5557,6 +5563,7 @@ display_monitor/CMakeFiles/display.dir/monitor_widget.cpp.o: /linux_distribute_m
   proto/cpu_stat.pb.h \
   proto/cpu_softirqs.pb.h \
   proto/cpu_load.pb.h \
+  proto/parsing_log.pb.h \
   /usr/local/include/grpc/impl/codegen/port_platform.h \
   /usr/include/linux/version.h \
   /usr/local/include/grpcpp/impl/codegen/async_generic_service.h \
@@ -6039,6 +6046,7 @@ display_monitor/CMakeFiles/display.dir/net_model.cpp.o: /linux_distribute_monito
   proto/cpu_stat.pb.h \
   proto/cpu_softirqs.pb.h \
   proto/cpu_load.pb.h \
+  proto/parsing_log.pb.h \
   /usr/local/include/grpc/impl/codegen/port_platform.h \
   /usr/include/linux/version.h \
   /usr/local/include/grpcpp/impl/codegen/async_generic_service.h \
@@ -6756,6 +6764,12 @@ display_monitor/display_autogen/EWIEGA46WW/moc_cpu_load_model.cpp:
 /usr/local/qt5/include/QtCore/qsocketnotifier.h:
 
 /usr/local/qt5/include/QtCore/qflags.h:
+
+/usr/local/qt5/include/QtWidgets/qslider.h:
+
+/usr/local/qt5/include/QtCore/qdatetime.h:
+
+/usr/local/include/grpcpp/impl/codegen/method_handler.h:
 
 /usr/local/qt5/include/QtCore/qalgorithms.h:
 
@@ -7529,10 +7543,6 @@ display_monitor/display_autogen/EWIEGA46WW/moc_cpu_stat_model.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
-/usr/local/include/grpcpp/security/credentials.h:
-
-/usr/local/qt5/include/QtCore/qstringlist.h:
-
 /usr/local/qt5/include/QtCore/qregexp.h:
 
 /usr/local/qt5/include/QtCore/qmetatype.h:
@@ -7730,6 +7740,12 @@ proto/monitor_info.pb.h:
 /usr/local/include/google/protobuf/stubs/logging.h:
 
 /usr/local/include/google/protobuf/arena_impl.h:
+
+/usr/local/include/grpcpp/security/credentials.h:
+
+/usr/local/qt5/include/QtCore/qstringlist.h:
+
+proto/parsing_log.pb.h:
 
 /usr/include/c++/9/bits/shared_ptr_atomic.h:
 
@@ -8104,9 +8120,3 @@ display_monitor/display_autogen/EWIEGA46WW/moc_monitor_widget.cpp:
 /usr/local/qt5/include/QtCore/qcborarray.h:
 
 /usr/local/qt5/include/QtCore/qcborvalue.h:
-
-/usr/local/qt5/include/QtWidgets/qslider.h:
-
-/usr/local/include/grpcpp/impl/codegen/method_handler.h:
-
-/usr/local/qt5/include/QtCore/qdatetime.h:

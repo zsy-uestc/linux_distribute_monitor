@@ -9,6 +9,7 @@
 #include "monitor/mem_monitor.h"
 #include "monitor/monitor_interface.h"
 #include "monitor/net_monitor.h"
+#include "monitor/parsing_log.h"
 
 #include "monitor_info.grpc.pb.h"
 #include "monitor_info.pb.h"
@@ -20,6 +21,7 @@ int main() {
   runners_.emplace_back(new monitor::CpuStatMonitor());
   runners_.emplace_back(new monitor::MemMonitor());
   runners_.emplace_back(new monitor::NetMonitor());
+  runners_.emplace_back(new monitor::ParsingLog());
 
   monitor::RpcClient rpc_client_;
   char *name = getenv("USER");

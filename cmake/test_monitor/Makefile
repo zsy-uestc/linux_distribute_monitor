@@ -250,6 +250,30 @@ src/monitor/net_monitor.cpp.s:
 	cd /linux_distribute_monitor/cmake && $(MAKE) $(MAKESILENT) -f test_monitor/CMakeFiles/monitor.dir/build.make test_monitor/CMakeFiles/monitor.dir/src/monitor/net_monitor.cpp.s
 .PHONY : src/monitor/net_monitor.cpp.s
 
+src/monitor/parsing_log.o: src/monitor/parsing_log.cpp.o
+.PHONY : src/monitor/parsing_log.o
+
+# target to build an object file
+src/monitor/parsing_log.cpp.o:
+	cd /linux_distribute_monitor/cmake && $(MAKE) $(MAKESILENT) -f test_monitor/CMakeFiles/monitor.dir/build.make test_monitor/CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.o
+.PHONY : src/monitor/parsing_log.cpp.o
+
+src/monitor/parsing_log.i: src/monitor/parsing_log.cpp.i
+.PHONY : src/monitor/parsing_log.i
+
+# target to preprocess a source file
+src/monitor/parsing_log.cpp.i:
+	cd /linux_distribute_monitor/cmake && $(MAKE) $(MAKESILENT) -f test_monitor/CMakeFiles/monitor.dir/build.make test_monitor/CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.i
+.PHONY : src/monitor/parsing_log.cpp.i
+
+src/monitor/parsing_log.s: src/monitor/parsing_log.cpp.s
+.PHONY : src/monitor/parsing_log.s
+
+# target to generate assembly for a file
+src/monitor/parsing_log.cpp.s:
+	cd /linux_distribute_monitor/cmake && $(MAKE) $(MAKESILENT) -f test_monitor/CMakeFiles/monitor.dir/build.make test_monitor/CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.s
+.PHONY : src/monitor/parsing_log.cpp.s
+
 src/utils/main.o: src/utils/main.cpp.o
 .PHONY : src/utils/main.o
 
@@ -298,6 +322,30 @@ src/utils/read_cmd.cpp.s:
 	cd /linux_distribute_monitor/cmake && $(MAKE) $(MAKESILENT) -f test_monitor/CMakeFiles/monitor.dir/build.make test_monitor/CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.s
 .PHONY : src/utils/read_cmd.cpp.s
 
+src/utils/read_log.o: src/utils/read_log.cpp.o
+.PHONY : src/utils/read_log.o
+
+# target to build an object file
+src/utils/read_log.cpp.o:
+	cd /linux_distribute_monitor/cmake && $(MAKE) $(MAKESILENT) -f test_monitor/CMakeFiles/monitor.dir/build.make test_monitor/CMakeFiles/monitor.dir/src/utils/read_log.cpp.o
+.PHONY : src/utils/read_log.cpp.o
+
+src/utils/read_log.i: src/utils/read_log.cpp.i
+.PHONY : src/utils/read_log.i
+
+# target to preprocess a source file
+src/utils/read_log.cpp.i:
+	cd /linux_distribute_monitor/cmake && $(MAKE) $(MAKESILENT) -f test_monitor/CMakeFiles/monitor.dir/build.make test_monitor/CMakeFiles/monitor.dir/src/utils/read_log.cpp.i
+.PHONY : src/utils/read_log.cpp.i
+
+src/utils/read_log.s: src/utils/read_log.cpp.s
+.PHONY : src/utils/read_log.s
+
+# target to generate assembly for a file
+src/utils/read_log.cpp.s:
+	cd /linux_distribute_monitor/cmake && $(MAKE) $(MAKESILENT) -f test_monitor/CMakeFiles/monitor.dir/build.make test_monitor/CMakeFiles/monitor.dir/src/utils/read_log.cpp.s
+.PHONY : src/utils/read_log.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -322,12 +370,18 @@ help:
 	@echo "... src/monitor/net_monitor.o"
 	@echo "... src/monitor/net_monitor.i"
 	@echo "... src/monitor/net_monitor.s"
+	@echo "... src/monitor/parsing_log.o"
+	@echo "... src/monitor/parsing_log.i"
+	@echo "... src/monitor/parsing_log.s"
 	@echo "... src/utils/main.o"
 	@echo "... src/utils/main.i"
 	@echo "... src/utils/main.s"
 	@echo "... src/utils/read_cmd.o"
 	@echo "... src/utils/read_cmd.i"
 	@echo "... src/utils/read_cmd.s"
+	@echo "... src/utils/read_log.o"
+	@echo "... src/utils/read_log.i"
+	@echo "... src/utils/read_log.s"
 .PHONY : help
 
 

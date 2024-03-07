@@ -340,6 +340,7 @@ grpc_manager/server/CMakeFiles/server.dir/src/grpc_manager.cpp.o: /linux_distrib
   proto/cpu_stat.pb.h \
   proto/cpu_softirqs.pb.h \
   proto/cpu_load.pb.h \
+  proto/parsing_log.pb.h \
   /usr/local/include/grpc/impl/codegen/port_platform.h \
   /usr/include/linux/version.h \
   /usr/local/include/grpcpp/impl/codegen/async_generic_service.h \
@@ -854,6 +855,7 @@ grpc_manager/server/CMakeFiles/server.dir/src/main.cpp.o: /linux_distribute_moni
   proto/cpu_stat.pb.h \
   proto/cpu_softirqs.pb.h \
   proto/cpu_load.pb.h \
+  proto/parsing_log.pb.h \
   /usr/local/include/grpcpp/impl/codegen/async_generic_service.h \
   /usr/local/include/grpcpp/impl/codegen/async_stream_impl.h \
   /usr/local/include/grpcpp/impl/codegen/service_type.h \
@@ -1095,6 +1097,8 @@ proto/net_info.pb.h:
 /usr/local/include/grpcpp/impl/codegen/async_unary_call_impl.h:
 
 /usr/local/include/google/protobuf/generated_message_table_driven.h:
+
+proto/parsing_log.pb.h:
 
 /usr/local/include/google/protobuf/arena_impl.h:
 

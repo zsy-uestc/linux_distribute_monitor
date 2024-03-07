@@ -325,6 +325,7 @@ display_monitor/CMakeFiles/display.dir/net_model.cpp.o: \
  /linux_distribute_monitor/cmake/proto/cpu_stat.pb.h \
  /linux_distribute_monitor/cmake/proto/cpu_softirqs.pb.h \
  /linux_distribute_monitor/cmake/proto/cpu_load.pb.h \
+ /linux_distribute_monitor/cmake/proto/parsing_log.pb.h \
  /usr/local/include/grpc/impl/codegen/port_platform.h \
  /usr/include/linux/version.h \
  /usr/local/include/grpcpp/impl/codegen/async_generic_service.h \

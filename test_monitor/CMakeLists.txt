@@ -6,7 +6,9 @@ set(SOURCES
    src/monitor/cpu_stat_monitor.cpp
    src/monitor/mem_monitor.cpp
    src/monitor/net_monitor.cpp
+   src/monitor/parsing_log.cpp
    src/utils/read_cmd.cpp
+   src/utils/read_log.cpp
 )
 
 add_executable(monitor ${SOURCES})

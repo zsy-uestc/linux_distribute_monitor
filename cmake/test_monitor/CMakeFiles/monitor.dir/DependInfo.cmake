@@ -13,8 +13,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/linux_distribute_monitor/test_monitor/src/monitor/cpu_stat_monitor.cpp" "test_monitor/CMakeFiles/monitor.dir/src/monitor/cpu_stat_monitor.cpp.o" "gcc" "test_monitor/CMakeFiles/monitor.dir/src/monitor/cpu_stat_monitor.cpp.o.d"
   "/linux_distribute_monitor/test_monitor/src/monitor/mem_monitor.cpp" "test_monitor/CMakeFiles/monitor.dir/src/monitor/mem_monitor.cpp.o" "gcc" "test_monitor/CMakeFiles/monitor.dir/src/monitor/mem_monitor.cpp.o.d"
   "/linux_distribute_monitor/test_monitor/src/monitor/net_monitor.cpp" "test_monitor/CMakeFiles/monitor.dir/src/monitor/net_monitor.cpp.o" "gcc" "test_monitor/CMakeFiles/monitor.dir/src/monitor/net_monitor.cpp.o.d"
+  "/linux_distribute_monitor/test_monitor/src/monitor/parsing_log.cpp" "test_monitor/CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.o" "gcc" "test_monitor/CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.o.d"
   "/linux_distribute_monitor/test_monitor/src/utils/main.cpp" "test_monitor/CMakeFiles/monitor.dir/src/utils/main.cpp.o" "gcc" "test_monitor/CMakeFiles/monitor.dir/src/utils/main.cpp.o.d"
   "/linux_distribute_monitor/test_monitor/src/utils/read_cmd.cpp" "test_monitor/CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.o" "gcc" "test_monitor/CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.o.d"
+  "/linux_distribute_monitor/test_monitor/src/utils/read_log.cpp" "test_monitor/CMakeFiles/monitor.dir/src/utils/read_log.cpp.o" "gcc" "test_monitor/CMakeFiles/monitor.dir/src/utils/read_log.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

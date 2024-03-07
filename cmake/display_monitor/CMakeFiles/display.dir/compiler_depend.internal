@@ -395,6 +395,7 @@ display_monitor/CMakeFiles/display.dir/cpu_load_model.cpp.o
  /linux_distribute_monitor/cmake/proto/cpu_stat.pb.h
  /linux_distribute_monitor/cmake/proto/cpu_softirqs.pb.h
  /linux_distribute_monitor/cmake/proto/cpu_load.pb.h
+ /linux_distribute_monitor/cmake/proto/parsing_log.pb.h
  /usr/local/include/grpc/impl/codegen/port_platform.h
  /usr/include/linux/version.h
  /usr/local/include/grpcpp/impl/codegen/async_generic_service.h
@@ -874,6 +875,7 @@ display_monitor/CMakeFiles/display.dir/cpu_softirq_model.cpp.o
  /linux_distribute_monitor/cmake/proto/cpu_stat.pb.h
  /linux_distribute_monitor/cmake/proto/cpu_softirqs.pb.h
  /linux_distribute_monitor/cmake/proto/cpu_load.pb.h
+ /linux_distribute_monitor/cmake/proto/parsing_log.pb.h
  /usr/local/include/grpc/impl/codegen/port_platform.h
  /usr/include/linux/version.h
  /usr/local/include/grpcpp/impl/codegen/async_generic_service.h
@@ -1353,6 +1355,7 @@ display_monitor/CMakeFiles/display.dir/cpu_stat_model.cpp.o
  /linux_distribute_monitor/cmake/proto/cpu_stat.pb.h
  /linux_distribute_monitor/cmake/proto/cpu_softirqs.pb.h
  /linux_distribute_monitor/cmake/proto/cpu_load.pb.h
+ /linux_distribute_monitor/cmake/proto/parsing_log.pb.h
  /usr/local/include/grpc/impl/codegen/port_platform.h
  /usr/include/linux/version.h
  /usr/local/include/grpcpp/impl/codegen/async_generic_service.h
@@ -1833,6 +1836,7 @@ display_monitor/CMakeFiles/display.dir/display_autogen/mocs_compilation.cpp.o
  /linux_distribute_monitor/cmake/proto/cpu_stat.pb.h
  /linux_distribute_monitor/cmake/proto/cpu_softirqs.pb.h
  /linux_distribute_monitor/cmake/proto/cpu_load.pb.h
+ /linux_distribute_monitor/cmake/proto/parsing_log.pb.h
  /usr/local/include/grpc/impl/codegen/port_platform.h
  /usr/include/linux/version.h
  /usr/local/include/grpcpp/impl/codegen/async_generic_service.h
@@ -3083,6 +3087,7 @@ display_monitor/CMakeFiles/display.dir/main.cpp.o
  /linux_distribute_monitor/cmake/proto/cpu_stat.pb.h
  /linux_distribute_monitor/cmake/proto/cpu_softirqs.pb.h
  /linux_distribute_monitor/cmake/proto/cpu_load.pb.h
+ /linux_distribute_monitor/cmake/proto/parsing_log.pb.h
  /usr/local/include/grpcpp/impl/codegen/async_generic_service.h
  /usr/local/include/grpcpp/impl/codegen/async_stream_impl.h
  /usr/local/include/grpcpp/impl/codegen/service_type.h
@@ -4140,6 +4145,7 @@ display_monitor/CMakeFiles/display.dir/mem_model.cpp.o
  /linux_distribute_monitor/cmake/proto/cpu_stat.pb.h
  /linux_distribute_monitor/cmake/proto/cpu_softirqs.pb.h
  /linux_distribute_monitor/cmake/proto/cpu_load.pb.h
+ /linux_distribute_monitor/cmake/proto/parsing_log.pb.h
  /usr/local/include/grpc/impl/codegen/port_platform.h
  /usr/include/linux/version.h
  /usr/local/include/grpcpp/impl/codegen/async_generic_service.h
@@ -5565,6 +5571,7 @@ display_monitor/CMakeFiles/display.dir/monitor_widget.cpp.o
  /linux_distribute_monitor/cmake/proto/cpu_stat.pb.h
  /linux_distribute_monitor/cmake/proto/cpu_softirqs.pb.h
  /linux_distribute_monitor/cmake/proto/cpu_load.pb.h
+ /linux_distribute_monitor/cmake/proto/parsing_log.pb.h
  /usr/local/include/grpc/impl/codegen/port_platform.h
  /usr/include/linux/version.h
  /usr/local/include/grpcpp/impl/codegen/async_generic_service.h
@@ -6048,6 +6055,7 @@ display_monitor/CMakeFiles/display.dir/net_model.cpp.o
  /linux_distribute_monitor/cmake/proto/cpu_stat.pb.h
  /linux_distribute_monitor/cmake/proto/cpu_softirqs.pb.h
  /linux_distribute_monitor/cmake/proto/cpu_load.pb.h
+ /linux_distribute_monitor/cmake/proto/parsing_log.pb.h
  /usr/local/include/grpc/impl/codegen/port_platform.h
  /usr/include/linux/version.h
  /usr/local/include/grpcpp/impl/codegen/async_generic_service.h

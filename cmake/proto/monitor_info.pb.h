@@ -37,6 +37,7 @@
 #include "cpu_stat.pb.h"
 #include "cpu_softirqs.pb.h"
 #include "cpu_load.pb.h"
+#include "parsing_log.pb.h"
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 #define PROTOBUF_INTERNAL_EXPORT_monitor_5finfo_2eproto
@@ -192,6 +193,7 @@ class MonitorInfo PROTOBUF_FINAL :
     kNameFieldNumber = 1,
     kCpuLoadFieldNumber = 3,
     kMemInfoFieldNumber = 5,
+    kParsingLogFieldNumber = 7,
   };
   // repeated .monitor.proto.SoftIrqs soft_irq = 2;
   int soft_irq_size() const;
@@ -299,6 +301,24 @@ class MonitorInfo PROTOBUF_FINAL :
       ::monitor::proto::MemInfo* mem_info);
   ::monitor::proto::MemInfo* unsafe_arena_release_mem_info();
 
+  // .monitor.proto.ParsingLog parsing_log = 7;
+  bool has_parsing_log() const;
+  private:
+  bool _internal_has_parsing_log() const;
+  public:
+  void clear_parsing_log();
+  const ::monitor::proto::ParsingLog& parsing_log() const;
+  ::monitor::proto::ParsingLog* release_parsing_log();
+  ::monitor::proto::ParsingLog* mutable_parsing_log();
+  void set_allocated_parsing_log(::monitor::proto::ParsingLog* parsing_log);
+  private:
+  const ::monitor::proto::ParsingLog& _internal_parsing_log() const;
+  ::monitor::proto::ParsingLog* _internal_mutable_parsing_log();
+  public:
+  void unsafe_arena_set_allocated_parsing_log(
+      ::monitor::proto::ParsingLog* parsing_log);
+  ::monitor::proto::ParsingLog* unsafe_arena_release_parsing_log();
+
   // @@protoc_insertion_point(class_scope:monitor.proto.MonitorInfo)
  private:
   class _Internal;
@@ -312,6 +332,7 @@ class MonitorInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
   ::monitor::proto::CpuLoad* cpu_load_;
   ::monitor::proto::MemInfo* mem_info_;
+  ::monitor::proto::ParsingLog* parsing_log_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_monitor_5finfo_2eproto;
 };
@@ -647,6 +668,83 @@ inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::monitor::proto::NetInf
 MonitorInfo::net_info() const {
   // @@protoc_insertion_point(field_list:monitor.proto.MonitorInfo.net_info)
   return net_info_;
+}
+
+// .monitor.proto.ParsingLog parsing_log = 7;
+inline bool MonitorInfo::_internal_has_parsing_log() const {
+  return this != internal_default_instance() && parsing_log_ != nullptr;
+}
+inline bool MonitorInfo::has_parsing_log() const {
+  return _internal_has_parsing_log();
+}
+inline const ::monitor::proto::ParsingLog& MonitorInfo::_internal_parsing_log() const {
+  const ::monitor::proto::ParsingLog* p = parsing_log_;
+  return p != nullptr ? *p : reinterpret_cast<const ::monitor::proto::ParsingLog&>(
+      ::monitor::proto::_ParsingLog_default_instance_);
+}
+inline const ::monitor::proto::ParsingLog& MonitorInfo::parsing_log() const {
+  // @@protoc_insertion_point(field_get:monitor.proto.MonitorInfo.parsing_log)
+  return _internal_parsing_log();
+}
+inline void MonitorInfo::unsafe_arena_set_allocated_parsing_log(
+    ::monitor::proto::ParsingLog* parsing_log) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(parsing_log_);
+  }
+  parsing_log_ = parsing_log;
+  if (parsing_log) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:monitor.proto.MonitorInfo.parsing_log)
+}
+inline ::monitor::proto::ParsingLog* MonitorInfo::release_parsing_log() {
+  
+  ::monitor::proto::ParsingLog* temp = parsing_log_;
+  parsing_log_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
+}
+inline ::monitor::proto::ParsingLog* MonitorInfo::unsafe_arena_release_parsing_log() {
+  // @@protoc_insertion_point(field_release:monitor.proto.MonitorInfo.parsing_log)
+  
+  ::monitor::proto::ParsingLog* temp = parsing_log_;
+  parsing_log_ = nullptr;
+  return temp;
+}
+inline ::monitor::proto::ParsingLog* MonitorInfo::_internal_mutable_parsing_log() {
+  
+  if (parsing_log_ == nullptr) {
+    auto* p = CreateMaybeMessage<::monitor::proto::ParsingLog>(GetArena());
+    parsing_log_ = p;
+  }
+  return parsing_log_;
+}
+inline ::monitor::proto::ParsingLog* MonitorInfo::mutable_parsing_log() {
+  // @@protoc_insertion_point(field_mutable:monitor.proto.MonitorInfo.parsing_log)
+  return _internal_mutable_parsing_log();
+}
+inline void MonitorInfo::set_allocated_parsing_log(::monitor::proto::ParsingLog* parsing_log) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(parsing_log_);
+  }
+  if (parsing_log) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(parsing_log)->GetArena();
+    if (message_arena != submessage_arena) {
+      parsing_log = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, parsing_log, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  parsing_log_ = parsing_log;
+  // @@protoc_insertion_point(field_set_allocated:monitor.proto.MonitorInfo.parsing_log)
 }
 
 #ifdef __GNUC__

@@ -271,6 +271,7 @@ proto/CMakeFiles/monitor_proto.dir/monitor_info.grpc.pb.cc.o: \
  /linux_distribute_monitor/cmake/proto/cpu_stat.pb.h \
  /linux_distribute_monitor/cmake/proto/cpu_softirqs.pb.h \
  /linux_distribute_monitor/cmake/proto/cpu_load.pb.h \
+ /linux_distribute_monitor/cmake/proto/parsing_log.pb.h \
  /linux_distribute_monitor/cmake/proto/monitor_info.grpc.pb.h \
  /usr/local/include/grpc/impl/codegen/port_platform.h \
  /usr/include/linux/version.h \

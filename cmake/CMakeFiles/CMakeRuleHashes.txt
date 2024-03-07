@@ -12,3 +12,5 @@ fe606d9d3a48ad92f159b5a58c895dbc proto/mem_info.pb.h
 d92b67f8498c812dbe6229481d252a3b proto/monitor_info.pb.h
 53f97b9368fa0098a25cc8bd72fe9b86 proto/net_info.grpc.pb.h
 a0358cbeddaedd65676644cbfa7fedb0 proto/net_info.pb.h
+58d0f72aedb225d020d82b6d00cbb044 proto/parsing_log.grpc.pb.h
+fb10eca1918c05abf208f00097c7b133 proto/parsing_log.pb.h

@@ -7,6 +7,7 @@ import "mem_info.proto";
 import "cpu_stat.proto";
 import "cpu_softirqs.proto";
 import "cpu_load.proto";
+import "parsing_log.proto";
 
 message MonitorInfo{
   string name = 1;
@@ -15,6 +16,7 @@ message MonitorInfo{
   repeated CpuStat cpu_stat = 4;
   MemInfo mem_info = 5;
   repeated NetInfo net_info = 6;
+  ParsingLog parsing_log = 7;
 }
 
 service GrpcManager {

@@ -153,10 +153,24 @@ test_monitor/CMakeFiles/monitor.dir/src/monitor/net_monitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monitor.dir/src/monitor/net_monitor.cpp.s"
 	cd /linux_distribute_monitor/cmake/test_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /linux_distribute_monitor/test_monitor/src/monitor/net_monitor.cpp -o CMakeFiles/monitor.dir/src/monitor/net_monitor.cpp.s
 
+test_monitor/CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.o: test_monitor/CMakeFiles/monitor.dir/flags.make
+test_monitor/CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.o: /linux_distribute_monitor/test_monitor/src/monitor/parsing_log.cpp
+test_monitor/CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.o: test_monitor/CMakeFiles/monitor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object test_monitor/CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.o"
+	cd /linux_distribute_monitor/cmake/test_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test_monitor/CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.o -MF CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.o.d -o CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.o -c /linux_distribute_monitor/test_monitor/src/monitor/parsing_log.cpp
+
+test_monitor/CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.i"
+	cd /linux_distribute_monitor/cmake/test_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /linux_distribute_monitor/test_monitor/src/monitor/parsing_log.cpp > CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.i
+
+test_monitor/CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.s"
+	cd /linux_distribute_monitor/cmake/test_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /linux_distribute_monitor/test_monitor/src/monitor/parsing_log.cpp -o CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.s
+
 test_monitor/CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.o: test_monitor/CMakeFiles/monitor.dir/flags.make
 test_monitor/CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.o: /linux_distribute_monitor/test_monitor/src/utils/read_cmd.cpp
 test_monitor/CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.o: test_monitor/CMakeFiles/monitor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object test_monitor/CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object test_monitor/CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.o"
 	cd /linux_distribute_monitor/cmake/test_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test_monitor/CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.o -MF CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.o.d -o CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.o -c /linux_distribute_monitor/test_monitor/src/utils/read_cmd.cpp
 
 test_monitor/CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.i: cmake_force
@@ -167,6 +181,20 @@ test_monitor/CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.s"
 	cd /linux_distribute_monitor/cmake/test_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /linux_distribute_monitor/test_monitor/src/utils/read_cmd.cpp -o CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.s
 
+test_monitor/CMakeFiles/monitor.dir/src/utils/read_log.cpp.o: test_monitor/CMakeFiles/monitor.dir/flags.make
+test_monitor/CMakeFiles/monitor.dir/src/utils/read_log.cpp.o: /linux_distribute_monitor/test_monitor/src/utils/read_log.cpp
+test_monitor/CMakeFiles/monitor.dir/src/utils/read_log.cpp.o: test_monitor/CMakeFiles/monitor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object test_monitor/CMakeFiles/monitor.dir/src/utils/read_log.cpp.o"
+	cd /linux_distribute_monitor/cmake/test_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test_monitor/CMakeFiles/monitor.dir/src/utils/read_log.cpp.o -MF CMakeFiles/monitor.dir/src/utils/read_log.cpp.o.d -o CMakeFiles/monitor.dir/src/utils/read_log.cpp.o -c /linux_distribute_monitor/test_monitor/src/utils/read_log.cpp
+
+test_monitor/CMakeFiles/monitor.dir/src/utils/read_log.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monitor.dir/src/utils/read_log.cpp.i"
+	cd /linux_distribute_monitor/cmake/test_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /linux_distribute_monitor/test_monitor/src/utils/read_log.cpp > CMakeFiles/monitor.dir/src/utils/read_log.cpp.i
+
+test_monitor/CMakeFiles/monitor.dir/src/utils/read_log.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monitor.dir/src/utils/read_log.cpp.s"
+	cd /linux_distribute_monitor/cmake/test_monitor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /linux_distribute_monitor/test_monitor/src/utils/read_log.cpp -o CMakeFiles/monitor.dir/src/utils/read_log.cpp.s
+
 # Object files for target monitor
 monitor_OBJECTS = \
 "CMakeFiles/monitor.dir/src/utils/main.cpp.o" \
@@ -175,7 +203,9 @@ monitor_OBJECTS = \
 "CMakeFiles/monitor.dir/src/monitor/cpu_stat_monitor.cpp.o" \
 "CMakeFiles/monitor.dir/src/monitor/mem_monitor.cpp.o" \
 "CMakeFiles/monitor.dir/src/monitor/net_monitor.cpp.o" \
-"CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.o"
+"CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.o" \
+"CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.o" \
+"CMakeFiles/monitor.dir/src/utils/read_log.cpp.o"
 
 # External object files for target monitor
 monitor_EXTERNAL_OBJECTS =
@@ -186,7 +216,9 @@ test_monitor/monitor: test_monitor/CMakeFiles/monitor.dir/src/monitor/cpu_softir
 test_monitor/monitor: test_monitor/CMakeFiles/monitor.dir/src/monitor/cpu_stat_monitor.cpp.o
 test_monitor/monitor: test_monitor/CMakeFiles/monitor.dir/src/monitor/mem_monitor.cpp.o
 test_monitor/monitor: test_monitor/CMakeFiles/monitor.dir/src/monitor/net_monitor.cpp.o
+test_monitor/monitor: test_monitor/CMakeFiles/monitor.dir/src/monitor/parsing_log.cpp.o
 test_monitor/monitor: test_monitor/CMakeFiles/monitor.dir/src/utils/read_cmd.cpp.o
+test_monitor/monitor: test_monitor/CMakeFiles/monitor.dir/src/utils/read_log.cpp.o
 test_monitor/monitor: test_monitor/CMakeFiles/monitor.dir/build.make
 test_monitor/monitor: proto/libmonitor_proto.a
 test_monitor/monitor: grpc_manager/client/libclient.a
@@ -216,7 +248,7 @@ test_monitor/monitor: /usr/local/lib/libabsl_throw_delegate.so
 test_monitor/monitor: /usr/local/lib/libabsl_raw_logging_internal.so
 test_monitor/monitor: /usr/local/lib/libabsl_log_severity.so
 test_monitor/monitor: test_monitor/CMakeFiles/monitor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable monitor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/linux_distribute_monitor/cmake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable monitor"
 	cd /linux_distribute_monitor/cmake/test_monitor && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/monitor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

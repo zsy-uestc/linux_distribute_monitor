@@ -380,6 +380,7 @@ test_monitor/CMakeFiles/monitor.dir/src/utils/main.cpp.o: \
  /linux_distribute_monitor/cmake/proto/cpu_stat.pb.h \
  /linux_distribute_monitor/cmake/proto/cpu_softirqs.pb.h \
  /linux_distribute_monitor/cmake/proto/cpu_load.pb.h \
+ /linux_distribute_monitor/cmake/proto/parsing_log.pb.h \
  /usr/local/include/grpcpp/impl/codegen/async_generic_service.h \
  /usr/local/include/grpcpp/impl/codegen/async_stream_impl.h \
  /usr/local/include/grpcpp/impl/codegen/service_type.h \
@@ -756,4 +757,5 @@ test_monitor/CMakeFiles/monitor.dir/src/utils/main.cpp.o: \
  /usr/include/boost/chrono/round.hpp \
  /linux_distribute_monitor/test_monitor/include/monitor/cpu_stat_monitor.h \
  /linux_distribute_monitor/test_monitor/include/monitor/mem_monitor.h \
- /linux_distribute_monitor/test_monitor/include/monitor/net_monitor.h
+ /linux_distribute_monitor/test_monitor/include/monitor/net_monitor.h \
+ /linux_distribute_monitor/test_monitor/include/monitor/parsing_log.h

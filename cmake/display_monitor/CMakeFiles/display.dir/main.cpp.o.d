@@ -444,6 +444,7 @@ display_monitor/CMakeFiles/display.dir/main.cpp.o: \
  /linux_distribute_monitor/cmake/proto/cpu_stat.pb.h \
  /linux_distribute_monitor/cmake/proto/cpu_softirqs.pb.h \
  /linux_distribute_monitor/cmake/proto/cpu_load.pb.h \
+ /linux_distribute_monitor/cmake/proto/parsing_log.pb.h \
  /usr/local/include/grpcpp/impl/codegen/async_generic_service.h \
  /usr/local/include/grpcpp/impl/codegen/async_stream_impl.h \
  /usr/local/include/grpcpp/impl/codegen/service_type.h \

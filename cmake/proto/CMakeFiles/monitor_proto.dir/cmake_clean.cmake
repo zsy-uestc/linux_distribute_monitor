@@ -23,6 +23,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/monitor_proto.dir/net_info.grpc.pb.cc.o.d"
   "CMakeFiles/monitor_proto.dir/net_info.pb.cc.o"
   "CMakeFiles/monitor_proto.dir/net_info.pb.cc.o.d"
+  "CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.o"
+  "CMakeFiles/monitor_proto.dir/parsing_log.grpc.pb.cc.o.d"
+  "CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.o"
+  "CMakeFiles/monitor_proto.dir/parsing_log.pb.cc.o.d"
   "cpu_load.grpc.pb.cc"
   "cpu_load.grpc.pb.h"
   "cpu_load.pb.cc"
@@ -49,6 +53,10 @@ file(REMOVE_RECURSE
   "net_info.grpc.pb.h"
   "net_info.pb.cc"
   "net_info.pb.h"
+  "parsing_log.grpc.pb.cc"
+  "parsing_log.grpc.pb.h"
+  "parsing_log.pb.cc"
+  "parsing_log.pb.h"
 )
 
 # Per-language clean rules from dependency scanning.

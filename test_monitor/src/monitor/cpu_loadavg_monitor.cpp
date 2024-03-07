@@ -12,7 +12,7 @@ void CpuLoadMonitor::UpdateOnce(monitor::proto::MonitorInfo* monitor_info) {
     load_avg_1_ = std::stof(cpu_load[0]);
     load_avg_3_ = std::stof(cpu_load[1]);
     load_avg_15_ = std::stof(cpu_load[2]);
-
+    std::cout<< "loadavg..."<<std::endl;
   auto cpu_load_msg = monitor_info->mutable_cpu_load();
   cpu_load_msg->set_load_avg_1(load_avg_1_);
   cpu_load_msg->set_load_avg_3(load_avg_3_);

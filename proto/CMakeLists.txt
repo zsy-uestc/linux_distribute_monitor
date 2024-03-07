@@ -11,6 +11,7 @@ set(PROTO_FILES
     mem_info.proto
     monitor_info.proto
     net_info.proto
+    parsing_log.proto
 )
 # 生成protobuf库
 add_library(monitor_proto ${PROTO_FILES})
